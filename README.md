@@ -5,6 +5,12 @@
 
 ## Installation and setup
 
+If you don't care about the details of setup, just execute the following and skip to section ###
+
+```
+. ./earthkit-setup.sh
+```
+
 ### conda environment setup
 
 The following setup assumes that you have conda installed,
