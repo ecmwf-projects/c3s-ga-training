@@ -44,12 +44,17 @@ pip install -q earthkit-maps
 pip install -q earthkit-climate@git+https://github.com/ecmwf/earthkit-climate
 ```
 
-### Install addittional dependancies
+### Install additional dependancies
 Earthkit does not take responsibility for some of the dependancy packages as they are quite heavy
 installations. Earthkit can be installed and run many methods without these dependancies, but for a full
 featured experience you should install the following pacakges. `conda` is advised for these as they come
 with additional binaries which `pip` may not install.
 
 ```
-conda install -y -c conda-forge cf-units cartopy 
+conda install -y -c conda-forge cf-units cartopy geopandas
+```
+
+### Install jupyter to run the notebooks
+```
+conda install -y -c conda-forge jupyter
 ```

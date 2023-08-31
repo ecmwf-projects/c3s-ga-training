@@ -2,10 +2,14 @@ envname=earthkit
 conda activate $envname 2>/dev/null || conda create -n $envname -c conda-forge python=3.10 -y && conda activate $envname;
 
 # Install EK packages
-conda install -y -c conda-forge earthkit-data  
-pip install -q earthkit-maps
+pip install earthkit-data@git+https://github.com/ecmwf/earthkit-data@develop --upgrade
+# conda install -y -c conda-forge earthkit-data  
+pip install earthkit-maps@git+https://github.com/ecmwf/earthkit-maps@develop --upgrade
 # Replace with PyPi when released
-pip install -q earthkit-climate@git+https://github.com/ecmwf/earthkit-climate
+pip install earthkit-climate@git+https://github.com/ecmwf/earthkit-climate --upgrade
 
-# Addittional dependancies:
+# Additional dependancies:
 conda install -c conda-forge -y cf-units cartopy 
+
+# Install jupyter
+conda install -y -c conda-forge jupyter
