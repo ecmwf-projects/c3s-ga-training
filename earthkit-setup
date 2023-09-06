@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Some magic that will either activate and update an existing environment or create and active a new one:
+conda activate $envname 2>/dev/null && conda env update -f environment.yml || conda env create -f environment.yml && conda activate $envname
+
+# set earthkit environment to the default used by ipykernels
+python -m ipykernel install --user --name=earthkit

@@ -1,0 +1,15 @@
+name: earthkit
+channels:
+  - conda-forge
+dependencies:
+- jupyter
+- cf-units
+- cartopy
+- rasterio
+- pip
+- pip:
+  - earthkit@git+https://github.com/ecmwf/earthkit@feature/import-resilience
+  - ecmwflibs
+  - earthkit-data
+  - earthkit-climate
+  - earthkit-maps
