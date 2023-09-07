@@ -8,7 +8,7 @@ pip install earthkit@git+https://github.com/ecmwf/earthkit@feature/import-resili
 # Install EK packages
 # pip install earthkit-data@git+https://github.com/ecmwf/earthkit-data@develop --upgrade
 pip install ecmwflibs
-pip install earthkit-data --upgrade
+pip install earthkit-data@git+https://github.com/ecmwf/earthkit-data@develop --upgrade
 # conda install -y -c conda-forge earthkit-data 
 pip install earthkit-maps --upgrade
 # Replace with PyPi when released
