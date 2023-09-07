@@ -28,7 +28,7 @@ you will need conda installed, which is covered in more detail below).
 
 ```
 cd c3s-ga-training
-. ./earthkit-setup.sh
+. ./earthkit-setup
 ```
 
 ### conda environment setup
