@@ -29,7 +29,7 @@ more detail below if you don't already have them).
 
 ```
 cd c3s-ga-training
-. ./earthkit-setup
+. ./earthkit-setup.sh
 ```
 
 ### conda environment setup
