@@ -23,7 +23,8 @@ Once you have cloned the repository, it's time to install **earthkit**!
 
 If you don't care about the details of setup, you can install all of the earthkit
 components we will be using in these examples by running a single script - 
-just execute the following and skip to section **Launching Jupyter**.
+just execute the following and skip to section **Launching Jupyter** (note that
+you will need conda installed, which is covered in more detail below).
 
 ```
 cd c3s-ga-training
