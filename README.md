@@ -76,6 +76,9 @@ conda install -y -c conda-forge cf-units cartopy geopandas
 ```
 
 ### CDS API key
+
+**NOTE: If you are working in WEkEO, you can ignore this section.**
+
 In order to retrieve data from the CDS using earthkit, you will need a CDS account
 and a `.cdsapirc` file. Head to the [CDS website](https://cds.climate.copernicus.eu),
 make sure you're logged in, and then visit the
