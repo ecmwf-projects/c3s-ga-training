@@ -10,9 +10,9 @@ pip install earthkit@git+https://github.com/ecmwf/earthkit@feature/import-resili
 pip install ecmwflibs
 pip install earthkit-data --upgrade
 # conda install -y -c conda-forge earthkit-data 
-pip install earthkit-maps@git+https://github.com/ecmwf/earthkit-maps@develop --upgrade
+pip install earthkit-maps --upgrade
 # Replace with PyPi when released
-pip install earthkit-climate@git+https://github.com/ecmwf/earthkit-climate@groupby_time-fix --upgrade
+pip install earthkit-climate --upgrade
 
 # Additional dependancies:
 conda install -c conda-forge -y cf-units cartopy rasterio
