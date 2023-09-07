@@ -24,7 +24,8 @@ Once you have cloned the repository, it's time to install **earthkit**!
 If you don't care about the details of setup, you can install all of the earthkit
 components we will be using in these examples by running a single script - 
 just execute the following and skip to section **Launching Jupyter** (note that
-you will need conda installed, which is covered in more detail below).
+you will need conda installed and a CDS API key - both of which are covered in
+more detail below if you don't already have them).
 
 ```
 cd c3s-ga-training
@@ -73,6 +74,13 @@ with additional binaries which `pip` may not install.
 ```
 conda install -y -c conda-forge cf-units cartopy geopandas
 ```
+
+### CDS API key
+In order to retrieve data from the CDS using earthkit, you will need a CDS account
+and a `.cdsapirc` file. Head to the [CDS website](https://cds.climate.copernicus.eu),
+make sure you're logged in, and then visit the
+[CDS API guide](https://cds.climate.copernicus.eu/api-how-to) for instructions on
+how to get your `.cdsapirc` file set up.
 
 ### Install jupyter to run the notebooks
 ```
