@@ -1,13 +1,32 @@
 # Earthkit training for the C3S General Assembly
 
-
-
+This repository contains Jupyter notebook training material to provide an introduction to **earthkit**.
 
 ## Installation and setup
 
-If you don't care about the details of setup, just execute the following and skip to section ###
+To begin, you need to clone this GitHub respository. Start by openening a terminal
+and navigating to somewhere you are happy to install these training materials. Then,
+click the green **Code** button at the top of this page and copy the link that appears.
+Finally, run the `git clone` command to clone the repository:
 
 ```
+cd ${HOME}
+
+# Clone over HTTPS (recommended)
+git clone https://github.com/ecmwf-projects/c3s-ga-training.git
+
+# Alternatively, clone over SSH - uncomment the below command
+# git clone git@github.com:ecmwf-projects/c3s-ga-training.git
+```
+
+Once you have cloned the repository, it's time to install **earthkit**!
+
+If you don't care about the details of setup, you can install all of the earthkit
+components we will be using in these examples by running a single script - 
+just execute the following and skip to section **Launching Jupyter**.
+
+```
+cd c3s-ga-training
 . ./earthkit-setup.sh
 ```
 
@@ -57,4 +76,14 @@ conda install -y -c conda-forge cf-units cartopy geopandas
 ### Install jupyter to run the notebooks
 ```
 conda install -y -c conda-forge jupyter
+```
+
+## Launching Jupyter
+
+For the hands-on training sessions, we will be using the browser-based Jupyter
+notebook interface. If you would like to follow along in the same interface,
+simply run the below script:
+
+```
+. ./launch-earthkit-to-jupyter
 ```
