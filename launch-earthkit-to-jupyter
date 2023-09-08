@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-. ./earthkit-setup.sh
-
-jupyter notebook notebooks/
