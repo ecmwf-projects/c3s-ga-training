@@ -25,16 +25,22 @@ git clone https://github.com/ecmwf-projects/c3s-ga-training.git
 
 Once you have cloned the repository, it's time to install **earthkit**!
 
-If you don't care about the details of setup, you can install all of the earthkit
-components we will be using in these examples by running a single script - 
-just execute the following and skip to section **Launching Jupyter** (note that
-you will need conda installed and a CDS API key - both of which are covered in
-more detail below if you don't already have them).
+We have included a script in the git repo which creates a conda environment
+with the earthkit packages that will be used in this training material.
+To get started go into the repo directory and execute the `earthkit-setup.sh`
+and then activate the environment.
 
 ```
 cd c3s-ga-training
-. ./earthkit-setup.sh
+./earthkit-setup.sh
+conda activate earthkit
 ```
+
+If you are using a remote JupyterHub environment (e.g. WEkEO) you can open one of the
+Notebooks and the earthkit enviornment should be available:
+
+![EnvChange](img/change-environment.gif)
+
 
 ### Binder
 
