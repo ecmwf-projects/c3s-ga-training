@@ -7,9 +7,3 @@ dependencies:
 - cartopy
 - rasterio
 - pip
-# - pip:
-#   - ecmwflibs
-#   - earthkit@git+https://github.com/ecmwf/earthkit@feature/import-resilience
-#   - earthkit-data
-#   - earthkit-climate
-#   - earthkit-maps
