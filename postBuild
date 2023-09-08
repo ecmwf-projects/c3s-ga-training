@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# envname=earthkit
+# conda activate $envname
+
+pip install ecmwflibs
+pip install earthkit@git+https://github.com/ecmwf/earthkit@feature/import-resilience
+
+# Install EK packages
+pip install earthkit-data@git+https://github.com/ecmwf/earthkit-data@develop --upgrade
+# conda install -y -c conda-forge earthkit-data 
+
+pip install earthkit-maps --upgrade
+pip install earthkit-climate --upgrade
+
+# # set earthkit environment to the default used by ipykernels
+# python -m ipykernel install --user --name=$envname
