@@ -4,6 +4,7 @@ This repository contains Jupyter notebook training material to provide an introd
 
 We recommend using [WEkEO](https://www.wekeo.eu) for this training as you can benefit from the fast internet connection between the CDS and and WEkEO. However, the installation instructions are applicable to both your local Linux/Mac computer and most remote JupyterHub environments (e.g. WEkEO).
 
+
 ## Installation and setup
 
 **These instructions are applicable to local and remote environments**
@@ -36,18 +37,43 @@ cd c3s-ga-training
 conda activate earthkit
 ```
 
-If you are using a remote JupyterHub environment (e.g. WEkEO) you can open one of the
-Notebooks and the earthkit enviornment should be available:
+### Launching Jupyter
+
+If you are using a remote JupyterHub environment (e.g. WEkEO) you can now simply open one of the
+Notebooks which should be available via the sidebar.
+If you are working locally you can launch jupyter with the command below then choose one the notebooks open.
+
+```
+jupyter notebook notebooks/
+```
+
+When the notebook is open you can set the earthkit environment kernel from the list of kernels in the top right:
 
 ![EnvChange](img/change-environment.gif)
 
 
 ### Binder
 
-It is also possible to run these notebooks on Binder, but you will not benefit from the fast connection that we have between WEkEO and the CDS for the data downloads.
+It is also possible to run these notebooks on Binder which create the environment with all the dependancies installed and you do not need to wrorry about Kernels. However, you will not benefit from the fast connection that we have between WEkEO and the CDS for the data downloads.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ecmwf-projects/c3s-ga-training/HEAD)
 
+
+### CDS API key
+
+**NOTE: If you are working in WEkEO, you can ignore this section.**
+
+In order to retrieve data from the CDS using earthkit, you will need a CDS account
+and a `.cdsapirc` file. Head to the [CDS website](https://cds.climate.copernicus.eu),
+make sure you're logged in, and then visit the
+[CDS API guide](https://cds.climate.copernicus.eu/api-how-to) for instructions on
+how to get your `.cdsapirc` file set up.
+
+*If working on binder you will find that you cannot create a file called `.cdsapirc`, a work-around is to add the credential to a file called `cdsapirc` then rename it from a terminal*:
+
+```
+mv ~/cdsapirc ~/.cdsapirc
+```
 
 ## Manual install
 
@@ -95,16 +121,6 @@ with additional binaries which `pip` may not install.
 ```
 conda install -y -c conda-forge cf-units cartopy geopandas
 ```
-
-### CDS API key
-
-**NOTE: If you are working in WEkEO, you can ignore this section.**
-
-In order to retrieve data from the CDS using earthkit, you will need a CDS account
-and a `.cdsapirc` file. Head to the [CDS website](https://cds.climate.copernicus.eu),
-make sure you're logged in, and then visit the
-[CDS API guide](https://cds.climate.copernicus.eu/api-how-to) for instructions on
-how to get your `.cdsapirc` file set up.
 
 ### Install jupyter to run the notebooks
 ```
