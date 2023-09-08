@@ -43,6 +43,10 @@ It is also possible to run these notebooks on Binder, but you will not benefit f
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ecmwf-projects/c3s-ga-training/HEAD)
 
 
+## Manual install
+
+Below are the steps to install the earthkit packages, these may be useful if you want to start using earthkit in your existing projects. However, this is not recommended for the training event as we will not have time to debug any installation issues you have.
+
 ### conda environment setup
 
 The following setup assumes that you have conda installed,
@@ -99,14 +103,4 @@ how to get your `.cdsapirc` file set up.
 ### Install jupyter to run the notebooks
 ```
 conda install -y -c conda-forge jupyter
-```
-
-## Launching Jupyter
-
-For the hands-on training sessions, we will be using the browser-based Jupyter
-notebook interface. If you would like to follow along in the same interface,
-simply run the below script:
-
-```
-. ./launch-earthkit-to-jupyter
 ```

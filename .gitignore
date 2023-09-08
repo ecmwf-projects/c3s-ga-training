@@ -2,5 +2,6 @@
 */.ipynb_checkpoints/*
 
 test_data/
+data/
 
 .jupyter/
