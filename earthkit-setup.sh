@@ -8,4 +8,4 @@ conda activate $envname
 . ./postBuild
 
 # set earthkit environment to the default used by ipykernels
-python -m ipykernel install --user --name=$envname
+python3 -m ipykernel install --user --name=$envname
