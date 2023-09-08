@@ -2,7 +2,11 @@
 
 This repository contains Jupyter notebook training material to provide an introduction to **earthkit**.
 
+We recommend using [WEkEO](https://www.wekeo.eu) for this training as you can benefit from the fast internet connection between the CDS and and WEkEO. However, the installation instructions are applicable to both your local Linux/Mac computer and most remote JupyterHub environments (e.g. WEkEO).
+
 ## Installation and setup
+
+**These instructions are applicable to local and remote environments**
 
 To begin, you need to clone this GitHub respository. Start by openening a terminal
 and navigating to somewhere you are happy to install these training materials. Then,
@@ -31,6 +35,13 @@ more detail below if you don't already have them).
 cd c3s-ga-training
 . ./earthkit-setup.sh
 ```
+
+### Binder
+
+It is also possible to run these notebooks on Binder, but you will not benefit from the fast connection that we have between WEkEO and the CDS for the data downloads.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ecmwf-projects/c3s-ga-training/HEAD)
+
 
 ### conda environment setup
 
