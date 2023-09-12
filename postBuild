@@ -8,5 +8,5 @@ pip install earthkit-data@git+https://github.com/ecmwf/earthkit-data@develop --u
 # conda install -y -c conda-forge earthkit-data 
 
 #pip install earthkit-maps --upgrade
-pip install earthkit-maps@git+https://github.com/ecmwf/earthkit-maps@develop --upgrade
+pip install earthkit-maps>=0.0.8 --upgrade
 pip install earthkit-climate>=0.0.9 --upgrade
