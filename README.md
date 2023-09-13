@@ -29,13 +29,15 @@ Once you have cloned the repository, it's time to install **earthkit**!
 We have included a script in the git repo which creates a conda environment
 with the earthkit packages that will be used in this training material.
 To get started go into the repo directory and execute the `earthkit-setup.sh`
-and then activate the environment.
+as source\* and then activate the environment. 
 
 ```
 cd c3s-ga-training
-./earthkit-setup.sh
+. ./earthkit-setup.sh
 conda activate earthkit
 ```
+
+\*To execute a script as source means to run the script in you current envrionment. This is done by including a `. ` at the start of the command. This is important as without running as source, `conda` does not have the information it requires to modify the environments correctly.
 
 ### Launching Jupyter
 
