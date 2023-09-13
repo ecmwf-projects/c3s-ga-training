@@ -2,7 +2,7 @@
 
 envname=earthkit
 
-jupyter kernelspec uninstall $envname
+jupyter kernelspec uninstall $envname -y
 
 conda env update -n $envname -f environment.yml
 conda activate $envname
