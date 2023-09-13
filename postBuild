@@ -10,3 +10,5 @@ pip install earthkit-data@git+https://github.com/ecmwf/earthkit-data@develop --u
 #pip install earthkit-maps --upgrade
 pip install earthkit-maps>=0.0.8 --upgrade
 pip install earthkit-climate>=0.0.9 --upgrade
+
+mkdir test_data/
